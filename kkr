@@ -1,0 +1,14 @@
+#!/bin/bash
+gethostname()
+{
+echo "hostname  of your system is: $(hostname)"
+}
+gethostname
+
+systeminfo()
+{
+gethostname
+echo "this is my machine ip address: $(hostname -i)"
+echo "this is my machine available RAM: $(free -h)"
+}
+systeminfo
